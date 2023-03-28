@@ -20,7 +20,7 @@ const produtos = {
     color: '#8ca78a',
     pro: "Drenagem linfatica",
     info:"A drenagem linfática manual é um tipo de massagem corporal que serve para ajudar o corpo a eliminar o excesso de líquidos e toxinas, facilitando o tratamento da celulite, inchaço ou linfedema, e sendo também muito utilizada no pós-operatório de cirurgias, principalmente da cirurgia plástica.",
-    img:"./src/img/slide6.PNG"
+    img:"./src/img/Slide6.PNG"
  },
     massagemmodeladora: {
         color: '#837043', 
