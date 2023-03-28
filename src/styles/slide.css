@@ -1,0 +1,64 @@
+/* Configurações básicas para o slideshow */
+
+.slideshow-container {
+position: relative;
+width: 100%;
+height: 400px;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.slideshow-slide {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.slideshow-slide img {
+max-width: 100%;
+height: auto;
+}
+
+/* Configuração para o primeiro slide */
+.slideshow-slide:first-child {
+opacity: 1;
+}
+
+/* Animação do slideshow */
+@keyframes slideshow-animation {
+0% {
+opacity: 1;
+}
+20% {
+opacity: 1;
+}
+40% {
+opacity: 0;
+}
+60% {
+    opacity: 0;
+    }
+80% {
+     opacity: 1;
+    }
+100% {
+opacity: 1;
+}
+}
+
+/* Define a animação para as transições de slides */
+.slideshow-slide {
+animation: slideshow-animation 10s ease-in-out infinite;
+}
+
+/* Para pausar a animação quando o mouse estiver em cima do slideshow */
+.slideshow-container:hover .slideshow-slide {
+animation-play-state: paused;
+}
