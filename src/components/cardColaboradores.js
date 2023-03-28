@@ -2,8 +2,6 @@ import{ cardDateColaboradores } from "../dados/data.js"
 
 export default function cardColaboradores() { 
 
-
-
    return `
     <div class="home-cards-container">
       <div class="home-img-colaboradores">

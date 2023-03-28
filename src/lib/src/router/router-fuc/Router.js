@@ -1,15 +1,10 @@
 import debounce from "../debounce.js";
 import userTags from "./tagsComp.js"
 import erroPage from "../erroPage.js";
-import styles from '../../../../styles/index.js'
-
-
 
 
 export default function Router(componentsPages, component) {
-Object.entries(styles).forEach((i, k) =>{
-document.querySelector("head").innerHTML += ` <link rel="stylesheet" href="${i[1]}">`
-})  
+
 
   const cache = {};
 
