@@ -2,7 +2,7 @@ export default async function Home() {
    
   return `
     <comp-menu> </comp-menu>
-    <div class="container-home">
+
 
       <br>
       <comp-slider data-class="container-slider"></comp-slider>
@@ -21,10 +21,15 @@ export default async function Home() {
       <br>
       <h3 style="color: #fff">Cursos</h3>
       <comp-cardpodutos></comp-cardpodutos>
-      <br>
-      <h3 style="color: #fff">Spa -Vida Sants</h3>
+      <comp-newsletter> </comp-newsletter>
+            <br>  
+            <br>
+            <br>
+            <br>  
+            <br>
 
-    </div>
+        <h3 style="color: #fff">Spa -Vida Sants</h3>
+  
     `;
 }
 
