@@ -18,7 +18,7 @@ h3{
 
 /*css img integrantes*/
 .home-img-colaboradores{
-  width: 90%;
+  width: 100%;
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -122,3 +122,7 @@ h3{
     display: none;
    
   }
+
+
+}
+
