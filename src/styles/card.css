@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
- *, *:after, *:before {
-	 box-sizing: border-box;
-}
  :root {
 	 --c-white: #fff;
 	 --c-black: #000;
@@ -18,12 +14,7 @@
 	 --c-indigo: #6558d3;
 	 --c-governor: #4133b7;
 }
- body {
-	 font-family: "Spline Sans", sans-serif;
-	 line-height: 1.5;
-	 min-height: 100vh;
-	
-}
+
  .cards {
 	 display: flex;
 	 flex-wrap: wrap;

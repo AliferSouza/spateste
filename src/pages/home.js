@@ -1,30 +1,30 @@
 export default async function Home() {
-   
-  return `
+
+  const state = () => {}
+
+  const html = () => {
+    return `
     <comp-menu> </comp-menu>
-    <div class="container-home">
+    <comp-slider data-class="container-slider" id="1"></comp-slider>
+    <comp-colaboradores> </comp-colaboradores>
+    <h3>Promoções e pacotes</h3>
+    <comp-cardpodutos></comp-cardpodutos>
+    <h3>Terapias e massagens</h3>
+    <comp-cardpodutos></comp-cardpodutos>
+    <h3>Spa -Vida Sants</h3>
+    <comp-cardpodutos></comp-cardpodutos>
+    <comp-newsletter data-class="newsletter"> </comp-newsletter>
 
-      <br>
-      <comp-slider data-class="container-slider"></comp-slider>
+  
+    `
 
-      <br>
+  }
 
-      <comp-colaboradores> </comp-colaboradores>
-      <br>
-
-      <h3 style="color: #fff">Promoções e pacotes</h3>
-      <comp-cardpodutos></comp-cardpodutos>
-      <br>
-      <h3 style="color: #fff">Terapias e massagens</h3>
-
-      <comp-cardpodutos></comp-cardpodutos>
-      <br>
-      <h3 style="color: #fff">Cursos</h3>
-      <comp-cardpodutos></comp-cardpodutos>
-      <br>
-      <h3 style="color: #fff">Spa -Vida Sants</h3>
-
-    </div>
-    `;
+  return {
+    html,
+    state
+  }
+   
+  
 }
 

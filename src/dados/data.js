@@ -1,9 +1,9 @@
 
 const cardDateColaboradores = [    
     {id:"vivi",img :"./src/img/vivi.jpg",vivi:'https://www.instagram.com/viviane.snt_/'},
-    {id:"alifer", img:"./src/img/alifer.jpg", alifer: 'https://www.instagram.com/alifer_oliveira_souza/'},
-    {id:"ester",img:"./src/img/ester.jpg", ester:'https://www.instagram.com/grazileite.integrar/'},  
-    {id:"lest",img:"./src/img/lest.jpg",lest:'https://www.instagram.com/_drac_lb/'},
+    {id:"alifer", img:"./src/img/alifer.jpg",alifer:'https://www.instagram.com/alifer_oliveira_souza/'},
+    {id:"ester",img:"./src/img/Ester.jpg",ester:'https://www.instagram.com/grazileite.integrar/'},  
+    {id:"lest",img:"./src/img/lest.jpg",lest:'https://www.instagram.com/_drac_lb/'}
   
  
 ]
@@ -20,7 +20,7 @@ const produtos = {
     color: '#8ca78a',
     pro: "Drenagem linfatica",
     info:"A drenagem linfática manual é um tipo de massagem corporal que serve para ajudar o corpo a eliminar o excesso de líquidos e toxinas, facilitando o tratamento da celulite, inchaço ou linfedema, e sendo também muito utilizada no pós-operatório de cirurgias, principalmente da cirurgia plástica.",
-    img:"./src/img/slide6.PNG"
+    img:"./src/img/Slide6.PNG"
  },
     massagemmodeladora: {
         color: '#837043', 
