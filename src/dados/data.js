@@ -104,15 +104,15 @@ const dados = {
       { img: "./src/img/6.jpeg" }
     ],
     cardDate: [
-      { img: "./src/img/slide1.png", id: "massagemrelaxante" },
-      { img: "./src/img/slide6.png", id: "drenagemlifatica" },
-      { img: "./src/img/slide9.png", id: "massagemmodeladora" },
-      { img: "./src/img/slide3.png", id: "liberacaomiofacial" },
-      { img: "./src/img/slide2.png", id: "pedrasquentes" },
-      { img: "./src/img/slide4.png", id: "bambuterapia" },
-      { img: "./src/img/slide5.png", id: "reflexologia" },
-      { img: "./src/img/slide7.png", id: "massagemvelas" },
-      { img: "./src/img/slide8.png", id: "bandagemelastica" }
+      { img: "./src/img/Slide1.PNG", id: "massagemrelaxante" },
+      { img: "./src/img/Slide6.PNG", id: "drenagemlifatica" },
+      { img: "./src/img/Slide9.PNG", id: "massagemmodeladora" },
+      { img: "./src/img/Slide3.PNG", id: "liberacaomiofacial" },
+      { img: "./src/img/Slide2.PNG", id: "pedrasquentes" },
+      { img: "./src/img/Slide4.PNG", id: "bambuterapia" },
+      { img: "./src/img/Slide5.PNG", id: "reflexologia" },
+      { img: "./src/img/Slide7.PNG", id: "massagemvelas" },
+      { img: "./src/img/Slide8.PNG, id: "bandagemelastica" }
     ]
   };
   
