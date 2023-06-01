@@ -6,7 +6,7 @@
 body {
   height: 100%;
   width: 100%;
-  background: #1a1a1a;
+  background: linear-gradient(45deg, #04051dea 0%, #dd8ecd 100%);
   
 }
 h3{
@@ -18,7 +18,8 @@ h3{
 
 /*css img integrantes*/
 .home-img-colaboradores{
-  width: 90%;
+  margin-top: 20px;
+  width: 100%;
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -29,7 +30,7 @@ h3{
 .home-img-colaboradores img{ 
   width: 70px;
   padding: 4px;
-  border: 2px solid #ff93b56a;
+  border: 2px solid #fffffffd;
   border-radius: 50%;
   margin: 15px 0px 15px 10px;
   cursor: pointer;
@@ -45,7 +46,7 @@ h3{
   width: 150px;
   margin: 15px 0px 15px 10px;
   padding-bottom: 10px;
-  border-radius: 5px;   
+  border-radius: 8px;   
   cursor: pointer;
 }
 
@@ -66,7 +67,8 @@ h3{
   justify-content: center;
   flex-direction: column;
   gap: 12px;
-  background: #fff;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #04051dea 90%, #dd8ecd 80%);
 
 }
 
@@ -117,8 +119,32 @@ h3{
   color: #fff;
 }
 
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button:hover {
+  background-color: darkgreen;
+}
+
 @media screen and (min-width: 606px) {
   body {
-    display: none;
-   
+    display: none;   
   }
+
+
+}
+
