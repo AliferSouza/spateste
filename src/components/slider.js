@@ -1,4 +1,3 @@
-
 export default async function slider(props) {
 const images = ['./src/img/banner1.PNG', './src/img/banner2.PNG', './src/img/banner3.PNG' ];
 
