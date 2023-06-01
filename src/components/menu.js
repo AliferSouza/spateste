@@ -1,18 +1,33 @@
+import { Router, useGetModules } from "../lib/index.js"
+
+
 export default async function Menu(props) {
 
 
+
+   const state = async () =>{
+    const a = document.querySelector("ul")
+    const Pages =  await useGetModules("../../../pages/index.js")
+      a.addEventListener('click', e =>{ 
+      const keyAttribute = e.target.getAttribute('key'); 
+       history.pushState(null, null, keyAttribute);
+       Router(Pages)
+     })
+
+   }
   
   const html = () => {
     return `   
     <nav>
-    <label class="logo"> <img data-href="/"  src="./src/img/logo.png" height="75vh"></label>
+    <label class="logo"> <img data-href="/#/home/"  src="./src/img/logo.png" height="75vh"></label>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
       &#x2630
     </label>
   
     <ul>
-      <li><a class="active" data-href="/">Início</a></li> 
+      <li><a class="active" key="/#/">Início</a></li> 
+      <li><a class="active" key="/#/teste">Bate-papo</a></li> 
     </ul>
   </nav>
 
@@ -21,6 +36,7 @@ export default async function Menu(props) {
   };
 
   return {
-    html
+    html,
+    state
   }
 }
