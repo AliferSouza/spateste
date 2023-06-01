@@ -15,6 +15,7 @@
 	 --c-governor: #4133b7;
 }
 
+
  .cards {
 	 display: flex;
 	 flex-wrap: wrap;
@@ -22,18 +23,21 @@
 	 flex-wrap: wrap;
 	 justify-content: center;
 	 gap: 2.5rem;
-	 width: 90%;
+	 width: 95%;
 	 max-width: 1000px;
 	 margin: 10vh auto;
+	
 }
  .card {
-	 border-radius: 16px;
-	 box-shadow: 0 30px 30px -25px rgba(65, 51, 183, .25);
-	 max-width: 300px;
+	 border-radius: 10px;
+	 box-shadow: 0 30px 30px -25px rgba(49, 46, 83, 0.25);	
+	 max-width: 400px;
 }
  .information {
-	 background-color: var(--c-white);
-	 padding: 1.5rem;
+	 width: 500px;
+	 background: linear-gradient(45deg, #04051dea 0%, #dd8ecd 100%);
+	 padding: 1.5rem;	
+	 border: 1px solid #c2a3c3b6;
 }
  .information .tag {
 	 display: inline-block;
@@ -103,7 +107,7 @@
 	 font-size: 1.25rem;
 }
  .plan {
-	 padding: 10px;
+	 padding: 20px;
 	 background-color: var(--c-white);
 	 color: var(--c-del-rio);
 }
@@ -112,7 +116,7 @@
 	 color: var(--c-coffee);
 }
  .plan .inner {
-	 padding: 20px;
+	 padding: 80px;
 	 padding-top: 40px;
 	 background-color: var(--c-fair-pink);
 	 border-radius: 12px;
