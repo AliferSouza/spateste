@@ -16,7 +16,7 @@ export default async function Info(){
 	   <article class="information [ card ]">
 		   <span class="tag">Massagem</span>
 		   <h2 class="title">${data.pro}</h2>
-		   <p class="info">${data.info}</p>
+		   <p class="info">${data.info || ''}</p>
 		   <button class="button">
 			   <span>Agende</span>
 			   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="none">
@@ -45,7 +45,7 @@ export default async function Info(){
 							   <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
 						   </svg>
 					   </span>
-					   <span><strong>5</strong> ${data.pro}</span>
+					   <span><strong>5</strong> ${data.pro || ''}</span>
 				   </li>
 				   <li>
 					   <span class="icon">
