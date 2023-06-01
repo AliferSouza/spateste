@@ -112,7 +112,7 @@ const dados = {
       { img: "./src/img/Slide4.PNG", id: "bambuterapia" },
       { img: "./src/img/Slide5.PNG", id: "reflexologia" },
       { img: "./src/img/Slide7.PNG", id: "massagemvelas" },
-      { img: "./src/img/Slide8.PNG, id: "bandagemelastica" }
+      { img: "./src/img/Slide8.PNG", id: "bandagemelastica" }
     ]
   };
   
