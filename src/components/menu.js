@@ -1,6 +1,10 @@
 export default async function Menu(props) {
 
 
+
+   const state = () =>{
+
+   }
   
   const html = () => {
     return `   
@@ -12,7 +16,8 @@ export default async function Menu(props) {
     </label>
   
     <ul>
-      <li><a class="active" data-href="/">Início</a></li> 
+      <li><a class="active" data-href="/#/">Início</a></li> 
+      <li><a class="active" data-href="/#/teste">Bate-papo</a></li> 
     </ul>
   </nav>
 
@@ -21,6 +26,7 @@ export default async function Menu(props) {
   };
 
   return {
-    html
+    html,
+    state
   }
 }
