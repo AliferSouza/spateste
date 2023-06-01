@@ -1,6 +1,5 @@
-
-
 export default async function newsletter(props) {
+
 
   const html = () => {
     return `
