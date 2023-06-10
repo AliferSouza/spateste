@@ -1,64 +1,70 @@
-*{ 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100%;
   width: 100%;
-  background: #1a1a1a;
-  
+  background: linear-gradient(45deg, #04051dea 0%, #dd8ecd 100%);
 }
-h3{
+
+a{
+  cursor: pointer;
+}
+
+
+h3 {
   color: #fff;
   text-align: center;
   padding: 10px;
 }
 
-
 /*css img integrantes*/
-.home-img-colaboradores{
-  width: 90%;
-  display: flex; 
+.home-img-colaboradores {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
   overflow-x: auto;
 
 }
-.home-img-colaboradores img{ 
-  width: 70px;
+
+.home-img-colaboradores img {
   padding: 4px;
-  border: 2px solid #ff93b56a;
+  border: 2px solid #fffffffd;
   border-radius: 50%;
   margin: 15px 0px 15px 10px;
   cursor: pointer;
 
 }
-.home-img-cards{
-  display: flex; 
+
+.home-img-cards {
+  display: flex;
   gap: 5px;
-  overflow-x: auto; 
+  overflow-x: auto;
   padding: 20px;
 }
-.home-img-card{
-  width: 150px;
+
+.home-img-card {
   margin: 15px 0px 15px 10px;
   padding-bottom: 10px;
-  border-radius: 5px;   
+  border-radius: 8px;
   cursor: pointer;
 }
 
-.newsletter{
+.newsletter {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .cardd {
-  width: 99%;
-
+  width: 100%;
   padding: 15px;
   text-align: center;
   display: flex;
@@ -66,20 +72,18 @@ h3{
   justify-content: center;
   flex-direction: column;
   gap: 12px;
-  background: #fff;
-
+  background: linear-gradient(45deg, #04051dea 90%, #dd8ecd 80%);
 }
-
 
 .card__title {
   font-size: 23px;
   font-weight: 900;
-  color: #333;
+  color: #f8f8f8;
 }
 
 .card__content {
   font-size: 13px;
-  color: #333;
+  color: #f9f9f9;
 }
 
 .card__form {
@@ -93,10 +97,14 @@ h3{
   outline: 0;
   background: rgb(255, 255, 255);
   box-shadow: transparent 0px 0px 0px 1px inset;
-  padding: 0.6em;
+  padding: 1rem;
   border-radius: 14px;
   border: 1px solid #333;
   color: black;
+}
+
+.card__form button {
+ background: #dd8ecd;
 }
 
 .card__form button {
@@ -108,17 +116,273 @@ h3{
   font-weight: bold;
 }
 
-
-
-.container-bnt{
+.container-bnt {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
 
-@media screen and (min-width: 606px) {
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(250, 251, 250);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mascote-button {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(250, 251, 250);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.whatsapp-button:hover {
+  background-color: darkgreen;
+}
+
+.containerbatepapo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  max-width: 350px;
+  height: 35%;
+  margin: 2px auto;
+  padding: 10px;
+  background: linear-gradient(45deg, #04051dea 0%, #dd8ecd 100%);
+  border: 2px solid #e6dfe8c1;
+  border-radius: 10px;
+  z-index: 2;
+  box-shadow: 0 30px 30px -25px rgba(49, 46, 83, 0.25);	
+
+}
+
+#bate-papo h1 {
+  font-size: 20px;  
+}
+#bate-papo img {
+  width: 50px;
+  border-radius: 20px;
+}
+
+#sair {
+  position: relative;
+  left: 40%;
+  top: -10px;
+  background: #4CAF50;
+
+}
+#submitBtn {
+  width: 100%;
+  position: relative;
+  top: 10px;
+
+}
+#bate-papo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#question{
+  border-radius: 5px;
+  border: none;
+}
+
+.output{
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.output {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 1000px) {
   body {
-    display: none;
-   
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #04051dea 0%, #dd8ecd 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  #app{
+    max-width: 1000px;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav {
+    background:  #04051dea 
+  }
+  .cardd{
+    background: #04051dea 
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#floating-button {
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  border-radius: 8px;
+  display: none;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  z-index: 1000000;
+
+}
+
+
+
+.loader-tres-pontinhos {	
+    display: flex;
+    width: 70px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: #020202;
+    border-radius: 5px;
+    margin: 8px;
+}
+
+.loader-tres-pontinhos div {	
+  width: 50%;
+  display: flex;
+  gap: 5px;
+
+}
+.loader-tres-pontinhos span {
+  background:#e29595;
+	border-radius:100%;
+	width:5px;
+	height:5px;
+	margin:2px 2px;
+	-webkit-animation:loader-tres-pontinhos 0.8s linear infinite alternate;
+	animation:loader-tres-pontinhos 0.8s linear infinite alternate;
+}
+
+.loader-tres-pontinhos span:nth-child(1){
+
+	-webkit-animation-delay:-0.8;
+	animation-delay:-0.8s;
+
+}
+
+.loader-tres-pontinhos span:nth-child(2) {
+	-webkit-animation-delay:-0.53333s;
+	animation-delay:-0.53333s;
+}
+
+.loader-tres-pontinhos span:nth-child(3) {
+	-webkit-animation-delay:-0.26666s;
+	animation-delay:-0.26666s;
+}
+
+
+
+
+@keyframes loader-tres-pontinhos{
+    from {transform: scale(0, 0);}
+    to {transform: scale(1, 1);}
+}
+
+@-webkit-keyframes loader-tres-pontinhos{
+    from {-webkit-transform: scale(0, 0);}
+    to {-webkit-transform: scale(1, 1);}
+}
+
+#video{
+    position: fixed;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    cursor: pointer;
+    z-index: 1000000;
+
+}
+
+
+#fechar-pop{
+  background: red;
+  border-radius: 100%;
+  padding: 10px;
+}

@@ -10,3 +10,4 @@ async function Api(url, method) {
   }
 
 export default Api
+
