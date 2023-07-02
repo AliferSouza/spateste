@@ -1,13 +1,15 @@
 import home from "./home.js"
-import info from "./Info.js"
-import teste from "./teste.js"
-
-
+import perfil from "./perfil.js"
+import produto from "./produto.js"
+import personalizado from "./pacPesonalizado.js"
+import perfumaria from "./shop/shopProdutos.js"
+import shop from "./shop/shop.js"
 
 export default {
     home,
-    info,   
-    teste
-
-
+    perfil,
+    produto,
+    personalizado,
+    shop,
+    perfumaria
 }

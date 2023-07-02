@@ -1,0 +1,30 @@
+id;categoria;nome;img;info;color;valor;null
+massagemrelaxante;massagens;Massagem Relaxante;./src/public/img/massagens/Slide1.PNG;Usando-se de movimentos leves, a massagem relaxante é uma excelente alternativa para o tratamento de dores musculares. Geralmente causadas por estresse, problemas de postura ou movimentos repetitivos, esses hábitos são prejudiciais, resultando em diferentes doenças. Dessa maneira, ela é uma ferramenta que promove o bem-estar, aliviando o desconforto das regiões mais afetadas;#2d1341;90,00;;
+drenagemlinfatica;massagens;Drenagem linfatica;./src/public/img/massagens/Slide6.PNG;A drenagem linfática manual é um tipo de massagem corporal que serve para ajudar o corpo a eliminar o excesso de líquidos e toxinas, facilitando o tratamento da celulite, inchaço ou linfedema, e sendo também muito utilizada no pós-operatório de cirurgias, principalmente da cirurgia plástica.;#8ca78a;110;00;;
+massagemmodeladora;massagens;Massagem Modeladora;./src/public/img/massagens/Slide9.PNG;A massagem modeladora é uma técnica que utiliza movimentos manuais intensos e profundos, com o objetivo de reorganizar as camadas de gordura, promovendo a harmonização dos contornos corporais. Além disso, quando aplicada com a técnica correta, pode auxiliar na redução de medidas e na retenção de líquidos;#837043;110,00;;
+liberaçãomiofascial;massagens;Liberação Miofascial;./src/public/img/massagens/Slide3.PNG;A liberação miofascial é um procedimento que visa amenizar as dores musculares causadas por tensão. Por meio de pressão sobre o local da dor, realizada manualmente ou com o aporte de rolos, a terapia previne lesões e contribui para o tratamento de graves patologias musculoesqueléticas.;#1E3319;110,00;;
+pedrasquentes;massagens;Pedras Quentes;./src/public/img/massagens/Slide2.PNG;A massagem com pedras quentes é uma terapia milenar, já utilizada pelos chineses, monges budistas e indígenas em seus rituais sagrados e de cura. A aplicação da pedra de tamanho e formato adequados, com a pressão e manipulação correta pelo terapeuta, proporciona os efeitos benéficos dessa massagem, desencadeando sua ação terapêutica.;#626262;110,000;;
+bambuterapia;massagens;Bambuterapia;./src/public/img/massagens/Slide4.PNG;A bambuterapia é uma técnica de massagem em que são utilizadas hastes de bambu (de diferentes tamanhos e espessuras) que se “encaixam” de acordo com a região do corpo em que são aplicadas, podendo gerar benefícios estéticos (como diminuição da celulite, por exemplo) e/ou terapêuticos (como relaxamento, entre outros). Conheça as particularidades da técnica, suas vantagens e contraindicações.;#704400;110,00;;
+reflexologia;massagens;Reflexologia;./src/public/img/massagens/Slide5.PNG;Integrada à medicina tradicional, a técnica pode diminuir os sintomas da medicina, eliminar inflamações, controlar os problemas gastrointestinais, melhorar o estresse, ansiedade e a depressão.;#e29595;110,00;;
+massagemcomvelas;massagens;Massagem comvelas;./src/public/img/massagens/Slide7.PNG;A massagem com velas é uma técnica de massagem americana que está sendo muito utilizada nas grandes clínicas e spas, denominada como Melted Candle (significa “velas derretidas”).;#e1e1e1;110,00;;
+promocao;promocao;PROMOÇÃO;./src/public/img/promoções/0.jpeg;;#704400;110,00;;
+promocao;promocao;PROMOÇÃO;./src/public/img/promoções/1.jpeg;;#e29595;110,00;;
+promocao;promocao;PROMOÇÃO;./src/public/img/promoções/2.jpeg;;#e29595;110,00;;
+promocao;promocao;PROMOÇÃO;./src/public/img/promoções/3.jpeg;;#e29595;110,00;;
+promocao;promocao;PROMOÇÃO;./src/public/img/promoções/5.jpeg;;#e29595;110,00;;
+promocao;promocao;PROMOÇÃO;./src/public/img/promoções/5.jpeg;;#e29595;110,00;;
+promocao;promocao;PROMOÇÃO;./src/public/img/promoções/6.jpeg;;#e29595;110,00;;
+pillingneffetiti;estetica;Pilling Neffetiti;./src/public/img/estetica/01.jpeg;;#e29595;110,00;;
+pillingegipicio;estetica;Pilling Egipicio;./src/public/img/estetica/02.jpeg;;#e29595;110,00;;
+altafrequêcia;estetica;Alta Frequêcia;./src/public/img/estetica/03.jpeg;;#e29595;110,00;;
+dermaplaning;estetica;Dermaplaning;./src/public/img/estetica/04.jpeg;;#e29595;110,00;;
+antiacne;estetica;Anti Acne;./src/public/img/estetica/05.jpeg;;#e29595;110,00;;
+peelingdedadyagaucrânia;estetica;Peeling de Dadyaga Ucrânia;./src/public/img/estetica/06.jpeg;;#e29595;110,00;;
+tratamentomelasma;estetica;Tratamento Melasma;./src/public/img/estetica/07.jpeg;;#e29595;110,00;;
+lavanda;oleos;Lavanda;./src/public/img/oleos/p1.jpeg;;#e29595;40.00;;
+teatree;oleos;Tea tree;./src/public/img/oleos/p2.jpeg;;#e29595;40.00;;
+laranjadoce;oleos;Laranja Doce;./src/public/img/oleos/p3.jpeg;;#e29595;40.00;;
+eucaliptoglobulos;oleos;Eucalipto Globulos;./src/public/img/oleos/p4.jpeg;;#e29595;40.00;;
+alecrim;oleos;Alecrim;./src/public/img/oleos/p5.jpeg;;#e29595;40,00;;
+propolisverde;oleos;Propolis Verde;./src/public/img/oleos/p6.jpeg;;#e29595;40.00;;
+

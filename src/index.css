@@ -1,0 +1,668 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 110%;
+  background: linear-gradient(45deg, #04051dea 0%, #dd8ecd 100%);
+}
+
+a {
+  cursor: pointer;
+}
+
+
+
+#valor {
+  position: fixed;
+  bottom: 500px;
+  right: 0px;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background: #236140;
+  color: #f8f6f8;
+  cursor: pointer;
+  padding: 1px;
+  font-size: 9px;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Paginas*/
+
+/* home*/
+#app {
+  display: flex;
+  flex-flow: column;
+
+  text-align: center
+}
+
+h1 {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 20px
+}
+
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+  height: 4px;
+}
+
+/* Estilo do "trilho" da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #f8f8f8;
+  /* Cor do trilho */
+}
+
+/* Estilo do "polegar" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #d08fee;
+  /* Cor do polegar */
+}
+
+/* Estilo do "polegar" da barra de rolagem ao passar o mouse sobre ele */
+::-webkit-scrollbar-thumb:hover {
+  background: #04051dea;
+  /* Cor do polegar ao passar o mouse */
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #04051dea 0%, #dd8ecd 100%);
+  }
+
+  #app {
+    max-width: 1000px;
+
+  }
+}
+
+
+
+/* home*/
+
+#app {
+  display: flex;
+  flex-flow: column;
+
+  text-align: center;
+
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.cards {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 2vh auto;
+
+}
+
+.card {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -25px rgba(49, 46, 83, 0.25);
+  max-width: 400px;
+}
+
+.information {
+  width: 500px;
+  background: linear-gradient(45deg, #f8f6f8 10%, #aaaaaaea 100%);
+  padding: 1rem;
+  border: 1px solid #c2a3c3b6;
+  color: #000;
+  border-radius: 10px;
+}
+
+.information2 {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  background: linear-gradient(45deg, #f8f6f8 10%, #aaaaaaea 100%);
+  padding: 1rem;
+  border: 1px solid #c2a3c3b6;
+  color: #000;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.information21 {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.information22 {
+  padding: 5px;
+  font-size: 12px;
+
+
+
+}
+
+.information .tag {
+  display: inline-block;
+  background-color: var(--c-titan-white);
+  color: var(--c-indigo);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.5em 0.75em;
+  line-height: 1;
+  border-radius: 6px;
+}
+
+.information .title {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.information .title+* {
+  margin-top: 1rem;
+}
+
+.information .info+* {
+  margin-top: 1.25rem;
+  color: #000;
+
+}
+
+.p-img {
+  border-radius: 20px;
+  padding: 10px
+}
+
+.information .button {
+  width: 90%;
+  padding: 15px;
+  color: #fff;
+  font: inherit;
+  line-height: 1;
+  background-color: #5abedd;
+  border: 2px solid #56a1d3;
+  border-radius: 10px;
+  font-weight: 500;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none
+}
+
+/* PacPesronalizados*/
+
+#app {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.per-container {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(45deg, #04051dea 0%, #dd8ecd 100%);
+
+
+
+}
+
+.opcoes {
+  width: 70%;
+  padding: 5px
+}
+
+.select-regiao {
+  width: 100%;
+  margin-left: 95px;
+  margin-top: 1px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+#localSuperior {
+  margin-left: -190px;
+}
+
+#localInferior {
+  margin-left: -190px;
+}
+
+
+
+
+/* shopProdutos*/
+
+
+
+.perfumaria-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  background: linear-gradient(45deg, #aaaaaaea 0%, #f8f6f8 100%);
+}
+
+.perfumaria-container-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 50px
+}
+
+.perfumaria-container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px
+}
+
+.perfumaria-container-card-button {
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  background: #5abedd;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/*Menu*/
+
+nav {
+  padding-top: 10px;
+  background: linear-gradient(45deg, #04051dea 100%, #dd8ecd 85%);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+  margin-top: -5px
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+
+}
+
+a.active,
+a:hover {
+  background: #ff93b592;
+  transition: .5s;
+
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #b776a5ac;
+    top: 95px;
+    left: -120%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 1000;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 40px 0;
+    line-height: 30px;
+    margin-right: 60px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #f7f7f7;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  nav {
+    background: #04051dea
+  }
+
+
+}
+
+
+/*Componentes*/
+
+.home-img-colaboradores {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  overflow-x: auto;
+}
+
+.home-img-colaboradores img {
+  padding: 4px;
+  border: 2px solid #fffffffd;
+  border-radius: 50%;
+  margin: 15px 0px 15px 10px;
+  cursor: pointer;
+}
+
+
+
+/*produtos card home*/
+.home-img-cards {
+  display: flex;
+  gap: 5px;
+  padding: 20px;
+
+
+
+}
+
+.home-img-colob-scroll {
+  display: flex;
+  gap: 5px;
+  overflow-x: auto;
+  padding: 10px;
+
+
+}
+
+.home-img-card {
+  margin: 10px 0px 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+/*oleos*/
+
+
+.perfu-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+
+}
+
+.perfu-container-cor {
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(45deg, #aaaaaaea 0%, #f8f6f8 100%);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.perfu-container-cor h2 {
+  color: #256643;
+  font-size: 15px;
+  margin-top: 20px;
+
+}
+
+.perfu-container-conteudo img {
+  padding: 4px;
+  border: 2px solid #fffffffd;
+  border-radius: 5px;
+  margin: 15px 0px 15px 10px;
+  cursor: pointer;
+
+}
+
+.comp-perfoleos-tamanho {
+  width: 80px;
+  height: 80px;
+}
+
+
+
+/*Mascote IA*/
+
+
+.containerbatepapo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  max-width: 350px;
+  height: 35%;
+  margin: 2px auto;
+  padding: 10px;
+  background: linear-gradient(45deg, #04051dea 0%, #dd8ecd 100%);
+  border: 2px solid #e6dfe8c1;
+  border-radius: 10px;
+  z-index: 2;
+  box-shadow: 0 30px 30px -25px rgba(49, 46, 83, 0.25);
+
+}
+
+#bate-papo h1 {
+  font-size: 20px;
+}
+
+#bate-papo img {
+  width: 50px;
+  border-radius: 20px;
+}
+
+#sair {
+  position: relative;
+  left: 40%;
+  top: -10px;
+  background: red;
+  color: #fff;
+  padding: 20px
+}
+
+.ia-label {
+  font-size: 20px;
+  padding: 10px
+}
+
+#submitBtn {
+  width: 100%;
+  position: relative;
+  top: 10px;
+  padding: 10px
+}
+
+#bate-papo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#question {
+  width: 94%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px
+}
+
+.output {
+  width: 100%;
+  padding: 20px;
+  color: #fff
+}
+
+#videoPalyPause{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    border-radius: 10px;   
+
+ 
+}
+
+
+
+#tres-pontos{
+  position: fixed;
+  width: 10px;
+  top: 50%;
+  right: 10px;
+  display: none;
+  width: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #000000;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#tres-pontos span {
+  background: #e29595;
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+  margin: 2px 2px;
+  -webkit-animation: loader-tres-pontinhos 0.8s linear infinite alternate;
+  animation: loader-tres-pontinhos 0.8s linear infinite alternate;
+}
+
+.loader-tres-pontinhos span:nth-child(1) {
+  -webkit-animation-delay: -0.8;
+  animation-delay: -0.8s;
+
+}
+
+.loader-tres-pontinhos span:nth-child(2) {
+  -webkit-animation-delay: -0.53333s;
+  animation-delay: -0.53333s;
+}
+
+.loader-tres-pontinhos span:nth-child(3) {
+  -webkit-animation-delay: -0.26666s;
+  animation-delay: -0.26666s;
+}
+
+@keyframes loader-tres-pontinhos {
+  from {
+    transform: scale(0, 0);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes loader-tres-pontinhos {
+  from {
+    -webkit-transform: scale(0, 0);
+  }
+
+  to {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+
