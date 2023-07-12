@@ -1,99 +1,69 @@
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/6.2.0/workbox-sw.js");
+// Nome do cache para armazenar as respostas em cache
+const CACHE_NAME = 'my-app-cache';
 
-workbox.setConfig({ debug: true });
+// Lista de arquivos a serem armazenados em cache durante a instalação
+const FILES_TO_CACHE = [
+    '/',
+    '/*'
+  ];
 
-const {
-    routing: { registerRoute, setCatchHandler },
-    strategies: { CacheFirst, NetworkFirst, StaleWhileRevalidate },
-    cacheableResponse: { CacheableResponse, CacheableResponsePlugin },
-    expiration: { ExpirationPlugin, CacheExpiration },
-    precaching: { matchPrecache, precacheAndRoute },
-} = workbox;
+// Tempo de validade do cache em segundos (4 dias neste exemplo)
+const CACHE_EXPIRATION = 4 * 24 * 60 * 60;
 
-precacheAndRoute([{ url: "/offline.html", revision: null }]);
-
-// Cache page navigations (html) with a Network First strategy
-registerRoute(
-    ({ request }) => request.mode === "navigate",
-    new NetworkFirst({
-        cacheName: "pages",
-        plugins: [
-            new CacheableResponsePlugin({
-                statuses: [200],
-            }),
-        ],
+// Evento de instalação do service worker
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.addAll(FILES_TO_CACHE);
     })
-);
-
-// Cache Google Fonts
-registerRoute(
-    ({ url }) =>
-        url.origin === "https://fonts.googleapis.com" ||
-        url.origin === "https://fonts.gstatic.com",
-    new StaleWhileRevalidate({
-        cacheName: "pwa-google-fonts",
-        plugins: [new ExpirationPlugin({ maxEntries: 20 })],
-    })
-);
-
-// Cache Images
-registerRoute(
-    ({ request }) => request.destination === "image",
-    new CacheFirst({
-        cacheName: "pwa-images",
-        plugins: [
-            new CacheableResponsePlugin({
-                statuses: [0, 200],
-            }),
-            new ExpirationPlugin({
-                maxEntries: 60,
-                maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-            }),
-        ],
-    })
-);
-
-// Cache CSS, JS, Manifest, and Web Worker
-registerRoute(
-    ({ request }) =>
-        request.destination === "script" ||
-        request.destination === "style" ||
-        request.destination === "manifest" ||
-        request.destination === "worker",
-    new StaleWhileRevalidate({
-        cacheName: "pwa-static-assets",
-        plugins: [
-            new CacheableResponsePlugin({
-                statuses: [0, 200],
-            }),
-            new ExpirationPlugin({
-                maxEntries: 32,
-                maxAgeSeconds: 24 * 60 * 60, // 24 hours
-            }),
-        ],
-    })
-);
-
-
- if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker
-        .register('service-worker.js')
-        .then(registration => {
-          console.log('Service Worker registrado: ', registration);
-        })
-        .catch(error => {
-          console.error('Falha no registro do Service Worker: ', error);
-        });
-    });
-  }
-// Catch routing errors, like if the user is offline
-setCatchHandler(async ({ event }) => {
-    // Return the precached offline page if a document is being requested
-    if (event.request.destination === "document") {
-        return matchPrecache("/offline.html");
-    }
-
-    return Response.error();
+  );
 });
 
+// Evento de ativação do service worker
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          if (cacheName !== CACHE_NAME) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
+
+// Evento fetch - Intercepta as solicitações de rede
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.match(event.request).then(response => {
+        // Verifica se a resposta está em cache
+        if (response) {
+          return response;
+        }
+
+        // Se a resposta não estiver em cache, faz a solicitação de rede
+        return fetch(event.request).then(networkResponse => {
+          // Verifica se a resposta da rede é válida
+          if (
+            networkResponse.status === 200 &&
+            networkResponse.type === 'basic'
+          ) {
+            // Clona a resposta da rede
+            const clonedResponse = networkResponse.clone();
+
+            // Armazena a resposta em cache
+            caches.open(CACHE_NAME).then(cache => {
+              cache.put(event.request, clonedResponse);
+            });
+          }
+
+          // Retorna a resposta da rede
+          return networkResponse;
+        });
+      });
+    })
+  );
+});
