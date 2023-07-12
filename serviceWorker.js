@@ -74,6 +74,19 @@ registerRoute(
     })
 );
 
+
+ if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker
+        .register('service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registrado: ', registration);
+        })
+        .catch(error => {
+          console.error('Falha no registro do Service Worker: ', error);
+        });
+    });
+  }
 // Catch routing errors, like if the user is offline
 setCatchHandler(async ({ event }) => {
     // Return the precached offline page if a document is being requested
