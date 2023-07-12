@@ -7,7 +7,7 @@ export default async function data() {
   };
 
     
-  const dadosP = await useCSVToJSON("https://script.google.com/macros/s/AKfycbyKU9OcJSJ0RrCvwGnRXkwGOUkKVYr4epjnNSwSvreRdWvPZG7RGSe5KeNkP20HyFtg5g/exec");
+  const dadosP = await useCSVToJSON("../../src/public/data/massagens/massagens.csv");
 
   const dadosC = await useCSVToJSON(
     "../../src/public/data/colaboradores/colaboradores.csv"
