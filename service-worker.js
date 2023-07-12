@@ -34,6 +34,8 @@ self.addEventListener('activate', event => {
   );
 });
 
+// ...
+
 // Evento fetch - Intercepta as solicitações de rede
 self.addEventListener('fetch', event => {
   event.respondWith(
@@ -44,7 +46,7 @@ self.addEventListener('fetch', event => {
           return response;
         }
 
-        // Se a resposta não estiver em cache, faz a solicitação de rede
+        // Faz a solicitação de rede
         return fetch(event.request).then(networkResponse => {
           // Verifica se a resposta da rede é válida
           if (
@@ -67,3 +69,5 @@ self.addEventListener('fetch', event => {
     })
   );
 });
+
+// ...
