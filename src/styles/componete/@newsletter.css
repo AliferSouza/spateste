@@ -1,0 +1,74 @@
+.card-newsletter{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    background: linear-gradient(45deg, #04051dea 100%, #dd8ecd 80%);
+
+  }
+
+  .card__title-newsletter {
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 900;
+    color: #f8f8f8;
+  }
+
+  .card__content-newsletter {
+    font-size: 13px;
+    color: #f9f9f9;
+  }
+
+  .card__form-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card__form-newsletter input {
+    width: 200px;
+    margin-top: 10px;
+    outline: 0;
+    background: rgb(255, 255, 255);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    padding: 1rem;
+    border-radius: 14px;
+    border: 1px solid #333;
+    color: black;
+  }
+
+  .card__form-newsletter button {
+  background: #dd8ecd;
+  }
+
+  .card__form-newsletterbutton {
+    border: 0;
+    background: #111;
+    color: #fff;
+    padding: 0.68em;
+    border-radius: 14px;
+    font-weight: bold;
+  }
+
+  .whatsapp {
+    position: fixed;
+    bottom: 5px;
+    right: 18px;
+    width:50px;
+    height:50px;
+    color: red     
+  }
+
+
+  .SairIa{
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    width:50px;
+    height:50px;
+    color: red;
+    cursor: pointer;
+  }
