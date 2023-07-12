@@ -1,0 +1,55 @@
+
+
+.cards {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    align-items: center;  
+    justify-content: center;  
+    flex-direction: column; 
+    background: linear-gradient(45deg, #f8f6f8 10%, #aaaaaaea 100%);
+    margin-bottom: 20px;
+  }
+  
+
+  .information {
+    width: 75%;  
+    height: 100%;
+    margin: 10px;
+  }
+
+  .information img{
+    border-radius: 10px;
+  }
+  
+  .information2 {
+    margin: 10px;
+    width: 80%;  
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #585858 10%, #7c7b7bea 100%);
+    padding: 1rem;
+    color: #f5f4f4;
+    border-radius: 10px;
+
+ 
+  }
+
+ 
+
+  
+  .information .button {
+    width: 80%;
+    padding: 15px;
+    color: #fff;
+    font: inherit;
+    line-height: 1;
+    background-color: #5abedd;
+    border: 2px solid #56a1d3;
+    border-radius: 10px;
+    font-weight: 500;
+    gap: 0.5rem;
+    cursor: pointer;
+    border: none
+  }
+  
