@@ -1,0 +1,33 @@
+
+
+/*Componentes*/
+
+.home-img-colaboradores {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow-x: auto;
+  }
+  
+  .home-img-colaboradores img {
+    padding: 4px;
+    border: 2px solid #fffffffd;
+    border-radius: 50%;
+    margin: 15px 0px 15px 10px;
+    cursor: pointer;
+  }
+  
+  
+  
+  /*produtos card home*/
+  .home-img-cards {
+    display: flex;
+    gap: 5px;
+    padding: 20px;
+  
+  
+  
+  }

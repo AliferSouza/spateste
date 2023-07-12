@@ -1,0 +1,23 @@
+{
+  "background_color": "#9c6799",
+  "description": "Esse é o App do spavidasants",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "spavidasants",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "spavidasants",
+  "start_url": "/",
+  "theme_color": "#9c6799",
+  "categories": [
+    "lifestyle",
+    "medical"
+  ],
+  "icons": [
+    {
+      "src": "./src/public/img/logo/logo.ico",
+      "type": "image/x-icon"
+    }
+  ], 
+  "lang": "pt"
+}
