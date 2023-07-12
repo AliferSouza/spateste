@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./src/styles/index.css">
-    <link rel="stylesheet" type="text/css" href="./src/styles/menu.css">
-    <link rel="stylesheet" type="text/css" href="./src/styles/slide.css">
-    <link rel="stylesheet" type="text/css" href="./src/styles/card.css">
-    <title>SPA - VidaSants</title>
-</head>
-<body>
-    <div id="app"></div>
-    <script id="root" type="module" src="./src/main.js"></script>
-</body>
+    <head>
+        <title>SpaVidaSants</title>
+        <meta name="description" content="Description..." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#9c6799" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="google" content="notranslate" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="SpaVidaSants" />
+        <meta property="og:description" content="Description..." />
+        <meta property="og:site_name" content="SpaVidaSants" />
+        <meta property="og:url" content="https://spavidasants.com" />
+        <meta property="og:image" content="" />
+
+        <link rel="manifest" href="data:application/json;base64,ewogICAgIm5hbWUiOiAiU3BhVmlkYVNhbnRzIiwKICAgICJzaG9ydF9uYW1lIjogIlNwYVZpZGFTYW50cyIsCiAgICAiZGVzY3JpcHRpb24iOiAiIiwKICAgICJ0aGVtZV9jb2xvciI6ICIjOWM2Nzk5IiwKICAgICJiYWNrZ3JvdW5kX2NvbG9yIjogIiM5YzY3OTkiLAogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgICAib3JpZW50YXRpb24iOiAiYW55IiwKICAgICJzY29wZSI6ICIvIiwKICAgICJzdGFydF91cmwiOiAiLyIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogImljb25zL2ljb25fMTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICAgICAgICAgInB1cnBvc2UiOiAiYW55IgogICAgICAgIH0sCiAgICAgICAgIHsKICAgICAgICAgICAgInNyYyI6ICJpY29ucy9tYXNrYWJsZV8xOTIucG5nIiwKICAgICAgICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAgICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAgICAgICAicHVycG9zZSI6ICJtYXNrYWJsZSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICAgInNyYyI6ICJpY29ucy9tYXNrYWJsZV81MTIucG5nIiwKICAgICAgICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAgICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAgICAgICAicHVycG9zZSI6ICJtYXNrYWJsZSIKICAgICAgICB9CiAgICBdCn0=" />     
+        
+        
+        
+        
+        
+        
+        <link rel="icon" type="imagem/png" href="/icons/icon_192.png" />
+              
+      <script type="module" crossorigin src="/assets/index-2ecfb5a8.js"></script>
+      <link rel="stylesheet" href="/assets/index-61d6beca.css">
+    </head>
+
+    <body>
+        <div id="app"></div>  
+        
+       
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", function () {
+                    navigator.serviceWorker
+                        .register("/service-worker.js")
+                        .then((registration) => {                          
+                        });
+                });
+            }
+        </script>
+
+    </body>
 </html>
