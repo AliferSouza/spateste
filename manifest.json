@@ -1,0 +1,39 @@
+{
+    "name": "SpaVidaSants",
+    "short_name": "SpaVidaSants",
+    "description": "",
+    "theme_color": "#9c6799",
+    "background_color": "#9c6799",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "icons/icon_192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+         {
+            "src": "icons/maskable_192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/maskable_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+          "name": "Página Inicial",
+          "short_name": "SpaVidaSants",
+          "url": "/",
+          "icons": [{ "src": "iicon_192_pwa.png", "sizes": "72x72" }]
+        }
+      ]
+}
