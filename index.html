@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>SpaVidaSants</title>
+    <meta name="description" content="Spa vida sants" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#9c6799" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="google" content="notranslate" />
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./src/styles/index.css">
-    <link rel="stylesheet" type="text/css" href="./src/styles/menu.css">
-    <link rel="stylesheet" type="text/css" href="./src/styles/slide.css">
-    <link rel="stylesheet" type="text/css" href="./src/styles/card.css">
-    <title>SPA - VidaSants</title>
+    <meta name="theme-color" content="#090821">   
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SpaVidaSants" />
+    <meta property="og:description" content="Spa de saúde e beleza natural" />
+    <meta property="og:site_name" content="SpaVidaSants" />
+    <meta property="og:url" content="https://spavidasants.com" />
+    <meta property="og:image" content="/icons/icon_192.png" />
+
+    <link rel="manifest" href="/manifest.json" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link rel="icon" type="imagem/png" href="/icons/icon_192.png" />
+
+  <script type="module" crossorigin src="/assets/index-6b23e2aa.js"></script>
+  <link rel="stylesheet" href="/assets/index-d7dfcc02.css">
 </head>
+
 <body>
     <div id="app"></div>
-    <script id="root" type="module" src="./src/main.js"></script>
+    
+
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registrado com sucesso!', registration);
+        })
+        .catch(error => {
+          console.error('Erro ao registrar o Service Worker:', error);
+        });
+    }
+
+            
+    </script>
+
 </body>
+
 </html>
