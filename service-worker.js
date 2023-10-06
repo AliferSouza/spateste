@@ -1,4 +1,4 @@
-const CACHE_NAME = 'SPA-v10';
+const CACHE_NAME = 'SPA-v9';
 const FILES_TO_CACHE = [
   '/',
   '/*'

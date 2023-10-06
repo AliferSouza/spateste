@@ -1,0 +1,27 @@
+[
+    {
+      "id": "vivi",
+      "nome": "Viviane",
+      "img": "/img/colaboradores/vivi.jpg",
+      "insta": "https://www.instagram.com/viviane.snt_/",
+      "funcao": "Como psicanalista e massoterapeuta",
+      "descricao": "Minha missão é ajudar as pessoas a encontrar equilíbrio emocional e físico. Através da psicanálise, busco compreender os aspectos inconscientes da mente enquanto como massoterapeuta aplico técnicas de massagem para promover relaxamento e alívio físico. Meu objetivo é oferecer um espaço seguro e acolhedor para meus clientes explorarem suas emoções e alcançarem um bem-estar integral"
+    },
+    {
+      "id": "alifer",
+      "nome": "Alifer",
+      "img": "/img/colaboradores/alifer.jpg",
+      "insta": "https://www.instagram.com/alifer_oliveira_souza/",
+      "funcao": "Como massoterapeuta desportivo",
+      "descricao": "Minha missão é proporcionar relaxamento, alívio da dor e bem-estar aos atletas e indivíduos envolvidos em atividades físicas intensas. Utilizo técnicas especializadas de massagem desportiva adaptando cada sessão às necessidades específicas do cliente. Meu objetivo é melhorar o desempenho esportivo, prevenir lesões, acelerar a recuperação muscular e promover a saúde geral. Através de manipulações específicas, alongamentos e liberação miofascial, ajudo os atletas a alcançarem seu potencial máximo e a se manterem em forma física ideal. Estou comprometido em cuidar dos atletas, oferecendo orientações sobre autocuidado e práticas saudáveis. Busco equilibrar o bem-estar e o desempenho esportivo dos meus clientes para que possam alcançar seus objetivos com sucesso e se manterem saudáveis a longo prazo"
+    },
+    {
+      "id": "lest",
+      "nome": "Leticia",
+      "img": "/img/colaboradores/lest.jpg",
+      "insta": "https://www.instagram.com/_drac_lb/",
+      "funcao": "Como atendente",
+      "descricao": "Meu papel é proporcionar uma experiência positiva aos clientes. Sou a primeira pessoa com quem eles interagem e busco oferecer um atendimento acolhedor e eficiente. Escuto atentamente suas necessidades, respondo às perguntas e forneço informações relevantes. Meu objetivo é criar um ambiente amigável e profissional onde os clientes se sintam valorizados e satisfeitos. Estou comprometido em superar as expectativas e garantir que cada interação seja memorável"
+    }
+  ]
+  
